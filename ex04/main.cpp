@@ -6,7 +6,7 @@
 /*   By: mohaben- <mohaben-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 19:46:26 by mohaben-          #+#    #+#             */
-/*   Updated: 2025/07/25 21:37:33 by mohaben-         ###   ########.fr       */
+/*   Updated: 2025/07/26 12:32:41 by mohaben-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,8 @@
 #include <fstream>
 #include <string>
 
-int	main(int ac, char **av)
+int	replace(char **av)
 {
-	if (ac != 4)
-	{
-		std::cerr << "Usage: ./replace <filename> <s1> <s2>\n";
-		return (1);
-	}
 	std::string		filename = av[1];
 	std::string		s1 = av[2];
 	std::string		s2 = av[3];
@@ -59,4 +54,14 @@ int	main(int ac, char **av)
 	inFile.close();
 	outFile.close();
 	return (0);
+}
+
+int	main(int ac, char **av)
+{
+	if (ac != 4)
+	{
+		std::cerr << "Usage: ./replace <filename> <s1> <s2>\n";
+		return (1);
+	}
+	return (replace(av));
 }
