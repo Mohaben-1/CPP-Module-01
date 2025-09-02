@@ -1,7 +1,7 @@
 # 🎓 CPP01 - C++ Module 01 (1337 Project)
 
 [![1337 Badge](https://img.shields.io/badge/1337-CPP--Module--01-blue)](https://www.42network.org/)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Language](https://img.shields.io/badge/Language-C%2B%2B-00599C)
 
 ---
